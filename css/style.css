@@ -1,33 +1,31 @@
-*{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-
-}
-
-a{
-  text-decoration: none;
+* {
+  margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-body{
+a {
+  text-decoration: none;
+}
 
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
-.cards{
-	margin-top: 70px;
-	justify-content: center;
+.cards {
+  margin-top: 70px;
+  justify-content: center;
 }
 
-.card{
-	margin:10px;
-	padding:20px;
-	height:120px;
-	border-radius:10px;
-	box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
-	transition: all 0.2s;
+.card {
+  margin: 10px;
+  padding: 20px;
+  height: 120px;
+  border-radius: 10px;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s;
+  width: 100%;
 }
 
 .card:hover {
@@ -35,21 +33,19 @@ body{
   transform: scale(1.01);
 }
 
-.card-title{
+.card-title {
   grid-row: 2/4;
   font-weight: 300;
   color: #fff;
-  text-align:center;
+  text-align: center;
   position: relative;
   top: 50%;
   transform: translateY(-50%);
 }
 
-
-.carrinho{
+.carrinho {
   margin-right: 10px;
 }
-
 
 /* CARD BACKGROUNDS */
 
@@ -84,23 +80,21 @@ body{
   visibility: hidden;
   opacity: 0;
   background: #fcfbeb;
-  width:300px;
-  height:auto;
-
+  width: 300px;
+  height: auto;
 }
 
-.overlay:target{
+.overlay:target {
   visibility: visible;
   opacity: 1;
 }
 
 .popup {
   margin: 5px auto;
-  padding: 10px; 
-    
+  padding: 10px;
 }
 
-.popup .close{
+.popup .close {
   position: absolute;
   top: 0;
   right: 5px;
@@ -115,42 +109,51 @@ body{
   color: #c23232;
 }
 
-.linha{
-  margin:5px 0px;
+.linha {
+  margin: 5px 0px;
 }
 
-.titulo-popup{
-  font-size:17px;
+.titulo-popup {
+  font-size: 17px;
   font-weight: 500;
 }
 
-.conteudo-popup{
-  font-size:15px;
+.conteudo-popup {
+  font-size: 15px;
 }
 
-
-.rodape{
+.rodape {
   position: absolute;
   bottom: 0;
   width: 100%;
   padding: 10px;
   background: #ededed;
-	text-align:center;
-	font-size: 13px;
-	color:#363636;
+  text-align: center;
+  font-size: 13px;
+  color: #363636;
 }
 
-
-@media (max-width: 768px){
-  .card{
+@media (max-width: 768px) {
+  .card {
     padding: 5px;
     min-height: 70px;
+    margin: 0px 0px 20px 0;
   }
 
-  .card-title{
+  .cards {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .card-title {
     font-size: 18px;
   }
-
-
 }
 
+
+@media (min-width: 768px) {
+  .cards {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+}
