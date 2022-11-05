@@ -6,36 +6,42 @@
         <a href="index.php">
           <big><i class="bi bi-arrow-left"></i></big>
         </a>
-        <span style="margin-left: 15px;">PASTEIS</span>
+        <span style="margin-left: 15px;">ITENS</span>
       </div>
       <?php require_once("carrinho.php") ?>
     </div>
   </nav>
 <!-- 
   Listas  -->
-  <ol class="list-group list-group-numbered">
-  <li class="list-group-item d-flex justify-content-between align-items-start">
-    <div class="ms-2 me-auto">
-      <div class="fw-bold">Subheading</div>
-      Content for list item
-    </div>
-    <span class="badge bg-primary rounded-pill">14</span>
-  </li>
-  <li class="list-group-item d-flex justify-content-between align-items-start">
-    <div class="ms-2 me-auto">
-      <div class="fw-bold">Subheading</div>
-      Content for list item
-    </div>
-    <span class="badge bg-primary rounded-pill">14</span>
-  </li>
-  <li class="list-group-item d-flex justify-content-between align-items-start">
-    <div class="ms-2 me-auto">
-      <div class="fw-bold">Subheading</div>
-      Content for list item
-    </div>
-    <span class="badge bg-primary rounded-pill">14</span>
-  </li>
-</ol>
+  <ol class="list-group" style="margin-top: 60px;">
+    <!-- Lista 1  -->
+    <a href="variacoes.php">
+      <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+          <div class="fw-bold">Pizza de Calabresa</div>
+             <span class="valores-item">(P) R$ 25,00 / (M) R$30,00 / (G) R$ 35,00</span>
+        </div>
+      </li>
+    </a>
+    <!-- Lista 2  -->
+    <a href="">
+      <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+          <div class="fw-bold">Pizza de Frango Catupiry</div>
+             <span class="valores-item">(P) R$ 25,00 / (M) R$30,00 / (G) R$ 35,00</span>
+        </div>
+      </li>
+    </a>
+    <!-- Lista 3  -->
+    <a href="">
+      <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+          <div class="fw-bold">Pizza de Cheedar com Bacon</div>
+             <span class="valores-item">(P) R$ 25,00 / (M) R$30,00 / (G) R$ 35,00</span>
+        </div>
+      </li>
+    </a>
+  </ol>
 
 </body>
 </html>
