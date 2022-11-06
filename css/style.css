@@ -13,11 +13,16 @@ body {
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
+
 /* Pagina Inicial  */
 
 .cards {
   margin-top: 70px;
   justify-content: center;
+}
+
+.main-container{
+	padding:5px;
 }
 
 .card {
@@ -166,11 +171,84 @@ body {
   color: #025709;
 }
 
+.descricao-item{
+  font-size: 13px;
+}
+
+.titulo-descricao-item{
+	font-weight: 400;
+	font-size: 14px;
+
+}
+
+.conteudo-descricao-item{
+	margin:0px 15px;
+}
+
 
 /* Adicionais PHP */
 .titulo-adicionais{
-  margin-top: 70px;
-	margin-bottom:8px;
+  margin-top: 60px;
 	background: #f2f0f0;
-	padding:5px;
+	padding:18px;
+}
+
+.titulo-adicionais-2{
+  margin-top: 12px;
+	background: #f2f0f0;
+	padding:18px;
+}
+
+.valor-total{
+  text-align:right;
+	margin-right: 5px;
+	margin-top: 8px;
+	font-size:14px;
+}
+
+.destaque{
+  padding: 10px;
+  margin-top: 65px;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.destaque-qtd{
+  padding: 10px;
+  margin-top: 10px;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.direita{
+  position: absolute;
+  right: 15px;
+}
+
+.abaixo{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+
+
+.total-pedido{
+	padding:10px;
+	margin-top: 10px;
+	box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+	font-size: 14px;	
+	font-weight: 400;
+	position:absolute;
+	bottom: 50px;
+	width:100%;
+	background: #FFF;
+}
+
+.btn{
+  border-radius: 0;
+  height: 45px;
 }

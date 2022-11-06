@@ -2,8 +2,8 @@
   <nav class="navbar bg-light fixed-top" style="box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.20);">
     <div class="container-fluid">
       <a class="navbar-brand" href="">
-          <img class="d-inline-block" src="./img/logo.png" width=" 30px">
-          Delivery
+          <img class="d-inline-block align-top" src="./img/logo.png" width=" 30px" height="30px">
+          <spam>Delivery<spam/>
       </a>
       <?php require_once("carrinho.php") ?>
     </div>

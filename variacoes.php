@@ -43,5 +43,14 @@
     </a>
   </ol>
 
+  <hr>
+	<div class="conteudo-descricao-item">
+	<div class="titulo-descricao-item"><b>Descrição Pizza Calabresa</b></div>
+	<p class="descricao-item">Pizza de Calabresa com borda recheada com cheddar, massa fina, bem recheada, tendo como ingredientes tomate, cebola, palmito, calabresa defumada e queijo.</p>
+	</div>
+	<!-- <div >
+		<img class="imagem-produto" src="img/produtos/calabresa.jpg">
+	</div> -->
+
 </body>
 </html>

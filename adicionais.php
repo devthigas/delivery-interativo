@@ -15,33 +15,80 @@
   <div class="titulo-adicionais">
     Inserir Adicionais?
   </div>
+
 <!-- Listas  -->
   <ol class="list-group ">
     <!-- Lista 1  -->
     <a href="variacoes.php">
       <li class="list-group-item d-flex justify-content-between align-items-start">
-          <div>Calabresa</div>
+          <div>Calabresa
+          <div class="valores-item">R$5,00</div>
+          </div>
           <div><i class="bi bi-square"></i></div>
       </li>
     </a>
     <!-- Lista 2  -->
     <a href="variacoes.php">
       <li class="list-group-item d-flex justify-content-between align-items-start">
-          <div>Cheddar</div>
+          <div>Cheddar
+          <div class="valores-item">R$5,00</div>
+          </div>
           <div><i class="bi bi-square"></i></div>
       </li>
     </a>
     <!-- Lista 3  -->
     <a href="variacoes.php">
       <li class="list-group-item d-flex justify-content-between align-items-start">
-          <div>Bacon</div>
+          <div>Bacon
+          <div class="valores-item">R$5,00</div>
+          </div>
           <div><i class="bi bi-square"></i></div>
       </li>
     </a>
   </ol>
 
-  <div class="align-right">
-    Total R$ 25,00
+  <div class="valor-total">
+    Total <b>R$ 25,00</b>
   </div>
+
+  <div class="titulo-adicionais-2">
+    Remover Itens?
+  </div>
+
+  <ol class="list-group ">
+    <!-- Lista 1  -->
+    <a href="variacoes.php">
+      <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div>Calabresa
+            <div class="valores-item">R$5,00</div>
+          </div>
+          <div><i class="bi bi-check-square-fill"></i></div>
+      </li>
+    </a>
+
+    <a href="variacoes.php">
+      <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div>Calabresa
+            <div class="valores-item">R$5,00</div>
+          </div>
+          <div><i class="bi bi-check-square-fill"></i></div>
+      </li>
+    </a>
+
+    <a href="variacoes.php">
+      <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div>Calabresa
+            <div class="valores-item">R$5,00</div>
+          </div>
+          <div><i class="bi bi-check-square-fill"></i></div>
+      </li>
+    </a>
+  </ol>
+
+  <div class="d-grid mt-4">
+  <a href="observacoes.php" class="btn btn-primary" type="button">Button</a>
+</div>
+
+
 </body>
 </html>
