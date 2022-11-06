@@ -17,7 +17,7 @@
     <!-- Lista 1  -->
     <a href="variacoes.php">
       <li class="list-group-item d-flex justify-content-between align-items-start">
-        <div class="ms-2 me-auto">
+        <div class="me-auto">
           <div class="fw-bold">Pizza de Calabresa</div>
              <span class="valores-item">(P) R$ 25,00 / (M) R$30,00 / (G) R$ 35,00</span>
         </div>
@@ -26,7 +26,7 @@
     <!-- Lista 2  -->
     <a href="">
       <li class="list-group-item d-flex justify-content-between align-items-start">
-        <div class="ms-2 me-auto">
+        <div class=" me-auto">
           <div class="fw-bold">Pizza de Frango Catupiry</div>
              <span class="valores-item">(P) R$ 25,00 / (M) R$30,00 / (G) R$ 35,00</span>
         </div>
@@ -35,8 +35,8 @@
     <!-- Lista 3  -->
     <a href="">
       <li class="list-group-item d-flex justify-content-between align-items-start">
-        <div class="ms-2 me-auto">
-          <div class="fw-bold">Pizza de Cheedar com Bacon</div>
+        <div class="me-auto">
+          <div class="fw-bold">Pizza de Cheddar com Bacon</div>
              <span class="valores-item">(P) R$ 25,00 / (M) R$30,00 / (G) R$ 35,00</span>
         </div>
       </li>
