@@ -252,3 +252,87 @@ body {
   border-radius: 0;
   height: 45px;
 }
+
+/* Observações.php popup */
+
+.overlay2 {
+  position: fixed;
+  bottom: 0;
+  visibility: hidden;
+  opacity: 0;
+  background: #fcfbeb;
+  width: 100%;
+  height: auto;
+}
+
+.overlay2:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup2 {
+  margin: 5px auto;
+  padding: 10px 6px;
+}
+
+.popup2 .close {
+  position: absolute;
+  top: -5px;
+  right: 5px;
+  transition: all 200ms;
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+.popup2 .close:hover {
+  color: #c23232;
+}
+
+
+.card-add-carrinho {
+  background: var(--color-background);
+  padding: 20px;
+  margin-top: 15px;
+  border-radius: var(--size-radius);
+  border: 3px solid var(--color-shadow, #8c8b8b);
+  box-shadow: .5rem .5rem 0 var(--color-shadow, #8c8b8b);  
+  
+}
+
+.group 			  { 
+  position:relative; 
+  margin-bottom:15px; 
+}
+
+.input 				{
+  font-size:18px;
+  padding:10px 10px 10px 5px;
+  display:block;
+  width:100%;
+  border:none;
+  border-bottom:1px solid #757575;
+}
+.input:focus 		{ outline:none; }
+
+/* LABEL ======================================= */
+.label 				 {
+  color:#999; 
+  font-size:15px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+
+/* active state */
+.input:focus ~ label, input:valid ~ label 		{
+  top:-20px;
+  font-size:12px;
+  color:#5264AE;
+}
