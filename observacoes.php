@@ -62,7 +62,7 @@
       <div class="col-12">
         <div class="card-add-carrinho">
           <a class="close" href="#">&times;</a>
-          <form>
+          <form action="carrinho-final.php">
             <div class="row">
               <div class="col-6">
                 <div class="group">
@@ -81,31 +81,26 @@
                 </div>
               </div>
             </div>
+            <div class="row mb-4 ">
+              <div class="col-6">
+                <a href="index.php" class="btn btn-primary">Comprar mais</a>
+              </div>
+              <div class="col-6">
+                <button class="btn btn-success">Finalizar pedido</button>
+              </div>
+            </div>
+            <div class="text-center" id="mensagem">Mensagem</div>
           </form>
         </div>
       </div>
-
     </div>
-
   </div>
 </div>
 
-<!-- <div id="popup2" class="overlay2">
-  <div class="popup2">
-    <div class="row">
-      <div class="col-5">
-        <input type="text" name="telefone" id="" placeholder="Seu Telefone">
-      </div>
-      <div class="col-4">
-        <input type="text" name="telefone" id="" placeholder="Seu Nome">
-      </div>
-      <div class="col-3">
-        <a class="close" href="#">&times;</a>
-      </div>
-    </div>
-    <hr class="linha">
-    <div class="conteudo-popup">
-      Aqui vamos colocar depois o conteúdo desse popup trazendo os itens que forem adicionados no carrinho
-    </div>
-  </div>
-</div> -->
+<script src="js/jquery-3.4.1.min.js"></script>
+
+<!-- Mascaras JS -->
+<script type="text/javascript" src="js/mascaras.js"></script>
+
+<!-- Ajax para funcionar Mascaras JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>

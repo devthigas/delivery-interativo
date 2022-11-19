@@ -250,6 +250,9 @@ body {
 
 .btn{
   border-radius: 0;
+}
+.btn-adicionais{
+  border-radius: 0;
   height: 45px;
 }
 
@@ -293,7 +296,7 @@ body {
 
 .card-add-carrinho {
   background: var(--color-background);
-  padding: 20px;
+  padding: 10px;
   margin-top: 15px;
   border-radius: var(--size-radius);
   border: 3px solid var(--color-shadow, #8c8b8b);
@@ -332,7 +335,69 @@ body {
 
 /* active state */
 .input:focus ~ label, input:valid ~ label 		{
-  top:-20px;
-  font-size:12px;
+  top:-5px;
+  font-size:10px;
   color:#5264AE;
+}
+
+.carrinho-qtd{
+	text-align:right;
+	background: #ededed;
+	padding:10px;	
+	margin-top:10px;
+	font-size: 0;
+
+}
+
+
+.menos-mais{
+	width:35px;
+	height:32px;
+	background: #cecece;
+	text-align:center;
+	display: inline-block;
+	font-size:17px;	
+}
+
+.qtd-item-carrinho{
+	width:35px;
+	height:32px;
+	background: #fff;
+	text-align:center;
+	display: inline-block;
+	font-size:17px;
+}
+
+
+.valor-carrinho-it{
+	width:90px;
+	height:32px;
+	background: #fff;
+	text-align:center;
+	display: inline-block;
+	font-size:17px;
+	color:#0a8f17;
+}
+
+
+.nome-produto{
+	font-weight: 300;
+}
+
+.overlay-excluir {
+  position: absolute;
+  top: 75px;
+  right:20px;    
+  visibility: hidden;
+  opacity: 0;
+  background: #ffeae6;
+  width:300px;
+  height:auto;
+  z-index:1;
+  
+
+}
+.overlay-excluir:target {
+  visibility: visible;
+  opacity: 1;
 }

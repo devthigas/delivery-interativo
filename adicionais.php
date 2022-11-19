@@ -74,7 +74,6 @@
           <div><i class="bi bi-check-square-fill"></i></div>
       </li>
     </a>
-
     <a href="variacoes.php">
       <li class="list-group-item d-flex justify-content-between align-items-start">
           <div>Calabresa
@@ -84,11 +83,8 @@
       </li>
     </a>
   </ol>
-
   <div class="d-grid mt-4">
-  <a href="observacoes.php" class="btn btn-primary" type="button">Button</a>
+  <a href="observacoes.php" class="btn btn-adicionais btn-primary" type="button">Avançar</a>
 </div>
-
-
 </body>
 </html>
