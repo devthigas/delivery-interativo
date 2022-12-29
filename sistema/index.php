@@ -1,3 +1,17 @@
+<?php
+$senha = "123"; 
+$senha_cript = md5($senha); 
+
+require_once("conexao.php");
+$query = $dbh->query("SELECT * FROM usuarios WHERE nivel = 'Admin'"); 
+$res = $query->fetchAll(PDO::FETCH_ASSOC); 
+$total_reg = @count($res);
+
+if($total_reg == 0){
+  $dbh->query("INSERT INTO usuarios SET nome = 'Admin', email = '$email_sistema', senha = '$senha', senha_cript = '$senha_cript', nivel = 'Admin', ativo = 'Sim', data = curDate()"); 
+} 
+
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -19,16 +33,17 @@
                 <img class="img-fluid"  src="../img/logo.png" alt="" width="100px">
               </div>
                 <div class="form-data">
-                  <form action="painel.php" method="post">
+                  <form action="autenticar.php" method="post">
                       <div class="forms-inputs mb-4"> <span>Email ou CPF</span> 
-                        <input class="form-control" autocomplete="off" type="text" required >
+                        <input class="form-control" autocomplete="off" type="text" required name="email" >
                      </div>
                      <div class="forms-inputs mb-4"> <span>Password</span> 
-                        <input class="form-control" autocomplete="off" type="password" required>
+                        <input class="form-control" autocomplete="off" type="password" required name="senha">
                     </div>
                     <div class="mb-3"> 
                       <button class="btn btn-dark w-100">Login</button> 
                     </div>
+                    <div class="text-danger"><?php if(isset($_GET['erro'])){echo "Email e senha incorretos";}?></div>
                   </form>
                   <div class="mb-3"> 
                       <button type="button" class="btn w-100" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Recuperar senha</button> 
@@ -49,7 +64,8 @@
       <div class="modal-body">
         <form id="form-recuperar">
           <div class="forms-inputs mb-4"> <span>Digite seu e-mail</span> 
-            <input class="form-control" autocomplete="off" type="text" required>
+            <input class="form-control" id="email-recuperar" autocomplete="off" type="text" required  name="rec-senha">
+            <div id="mensagem-recuperar"></div>
           </div>
           <div class="modal-footer">
             <button type="submit" class="btn btn-dark">Recuperar</button>
@@ -59,9 +75,12 @@
     </div>
   </div>
 </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript">
+
+
   $("#form-recuperar").submit(function () {
    event.preventDefault();
    var formData = new FormData(this);
@@ -93,7 +112,7 @@
      processData: false,
 
    });
-
+   
  });
 </script>
 
